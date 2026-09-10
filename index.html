@@ -1,4 +1,3 @@
-<!DOCTYPE html>
 <html lang="en">
 <head>
   <meta charset="UTF-8" />
@@ -8,290 +7,7 @@
   <meta name="google-site-verification" content="ZmGIFLHDiJUW3fOw4IO44OO4-Gp6tmuf-KC4-KXYvTM" />
   <title>Rukumani Printing Press · Cards & Ari</title>
   <meta name="google-site-verification" content="ZmGIFLHDiJUW3fOw4IO44OO4-Gp6tmuf-KC4-KXYvTM" />
-  <style>
-    * {
-      margin: 0;
-      padding: 0;
-      box-sizing: border-box;
-      font-family: 'Segoe UI', Roboto, system-ui, sans-serif;
-    }
-    body {
-      background: #fcf7ef;
-      color: #2e1a0c;
-    }
-    .container {
-      max-width: 1280px;
-      margin: 0 auto;
-      padding: 0 24px 30px;
-    }
-    /* navigation */
-    .navbar {
-      display: flex;
-      flex-wrap: wrap;
-      justify-content: space-between;
-      align-items: center;
-      padding: 18px 0 10px;
-      border-bottom: 2px solid #e6d8b5;
-    }
-    .logo h1 {
-      font-size: 1.8rem;
-      letter-spacing: -0.5px;
-      font-weight: 600;
-      color: #4c1f0c;
-    }
-    .logo span {
-      font-weight: 300;
-      font-size: 0.9rem;
-      opacity: 0.7;
-      display: inline-block;
-      margin-left: 8px;
-    }
-    .nav-links {
-      display: flex;
-      flex-wrap: wrap;
-      gap: 20px;
-      align-items: center;
-    }
-    .nav-links a {
-      text-decoration: none;
-      color: #3d2616;
-      font-weight: 500;
-      font-size: 1rem;
-      transition: 0.2s;
-    }
-    .nav-links a:hover {
-      color: #a1552b;
-    }
-    .phone-highlight {
-      background: #4c1f0c;
-      color: #fcf7ef !important;
-      padding: 8px 18px;
-      border-radius: 40px;
-      font-weight: 600;
-      display: inline-flex;
-      align-items: center;
-      gap: 6px;
-    }
-    /* sections */
-    section {
-      padding: 40px 0 20px;
-      scroll-margin-top: 80px;
-    }
-    .section-title {
-      font-size: 2.2rem;
-      font-weight: 500;
-      border-left: 8px solid #b87c4b;
-      padding-left: 20px;
-      margin-bottom: 30px;
-      color: #2e1a0c;
-    }
-    .hero {
-      display: flex;
-      flex-wrap: wrap;
-      align-items: center;
-      gap: 40px;
-      background: #f3ecdb;
-      border-radius: 60px 60px 40px 40px;
-      padding: 30px 40px;
-      margin-top: 10px;
-    }
-    .hero-content {
-      flex: 1 1 280px;
-    }
-    .hero-content h2 {
-      font-size: 3rem;
-      font-weight: 300;
-      line-height: 1.2;
-      color: #2e1a0c;
-    }
-    .hero-content p {
-      font-size: 1.2rem;
-      margin: 18px 0 24px;
-      opacity: 0.8;
-    }
-    .btn-primary {
-      background: #4c1f0c;
-      color: #fcf7ef;
-      padding: 14px 32px;
-      border-radius: 60px;
-      text-decoration: none;
-      font-weight: 600;
-      display: inline-block;
-      transition: 0.2s;
-      border: none;
-    }
-    .btn-primary:hover {
-      background: #6b2f16;
-    }
-    .btn-outline {
-      background: transparent;
-      border: 2px solid #4c1f0c;
-      color: #4c1f0c;
-      padding: 12px 28px;
-      border-radius: 60px;
-      text-decoration: none;
-      font-weight: 600;
-      display: inline-block;
-    }
-    .hero-image {
-      flex: 1 1 300px;
-      border-radius: 40px;
-      overflow: hidden;
-      background: #dacbaa;
-      box-shadow: 0 10px 25px rgba(0,0,0,0.05);
-    }
-    .hero-image img {
-      width: 100%;
-      height: 340px;
-      object-fit: cover;
-      display: block;
-    }
-    .about-grid {
-      display: flex;
-      flex-wrap: wrap;
-      gap: 20px 40px;
-      margin: 24px 0 10px;
-    }
-    .highlight {
-      display: flex;
-      align-items: center;
-      gap: 12px;
-      background: #f5edd6;
-      padding: 10px 24px 10px 20px;
-      border-radius: 60px;
-    }
-    .card-grid {
-      display: grid;
-      grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
-      gap: 28px;
-      margin: 25px 0;
-    }
-    .service-card, .product-card {
-      background: #fdfaf3;
-      border-radius: 40px;
-      padding: 28px 18px;
-      text-align: center;
-      box-shadow: 0 4px 12px rgba(0,0,0,0.02);
-      border: 1px solid #ede3cc;
-      transition: 0.2s;
-    }
-    .service-card:hover, .product-card:hover {
-      transform: translateY(-4px);
-      border-color: #c7a87b;
-    }
-    .service-card h3, .product-card h3 {
-      margin-top: 4px;
-    }
-    .invite-highlight {
-      background: #e6d8b5;
-      border-radius: 80px;
-      padding: 12px 28px;
-      display: inline-flex;
-      flex-wrap: wrap;
-      gap: 20px 30px;
-      font-weight: 500;
-      margin-bottom: 10px;
-    }
-    .page-divider {
-      height: 2px;
-      background: linear-gradient(90deg, transparent, #dacbaa, transparent);
-      margin: 30px 0 10px;
-    }
-    /* ARI GALLERY – real photographs */
-    .ari-gallery {
-      display: grid;
-      grid-template-columns: repeat(auto-fill, minmax(160px, 1fr));
-      gap: 24px 16px;
-      margin: 28px 0 20px;
-    }
-    .ari-item {
-      background: #fcf4e6;
-      border-radius: 40px 40px 30px 30px;
-      padding: 16px 10px 18px;
-      text-align: center;
-      border: 1px solid #e3d3b6;
-      transition: 0.15s;
-      box-shadow: 0 4px 10px rgba(0,0,0,0.02);
-    }
-    .ari-item:hover {
-      border-color: #b48c5e;
-      background: #faf0dd;
-    }
-    .ari-img {
-      width: 100%;
-      aspect-ratio: 1/1;
-      border-radius: 30px;
-      margin-bottom: 12px;
-      overflow: hidden;
-      box-shadow: 0 4px 8px rgba(0,0,0,0.05);
-      background-color: #eee3cd;
-    }
-    .ari-img img {
-      width: 100%;
-      height: 100%;
-      object-fit: cover;
-      display: block;
-      transition: 0.3s;
-    }
-    .ari-item:hover .ari-img img {
-      transform: scale(1.06);
-    }
-    .ari-item h4 {
-      font-weight: 600;
-      font-size: 1rem;
-      color: #3d2616;
-    }
-    .ari-item p {
-      font-size: 0.8rem;
-      opacity: 0.7;
-    }
-    .contact-block {
-      background: #f5edd6;
-      border-radius: 60px;
-      padding: 28px 32px;
-    }
-    .contact-row {
-      display: flex;
-      flex-wrap: wrap;
-      gap: 20px 36px;
-      align-items: center;
-    }
-    .contact-item a {
-      color: #2e1a0c;
-      text-decoration: none;
-      font-weight: 500;
-    }
-    .contact-item a:hover {
-      text-decoration: underline;
-    }
-    .address-block {
-      flex: 1 1 220px;
-    }
-    .footer-note {
-      margin-top: 40px;
-      text-align: center;
-      padding: 24px 0 10px;
-      border-top: 1px solid #e6d8b5;
-      opacity: 0.8;
-      font-size: 0.95rem;
-    }
-    @media (max-width: 700px) {
-      .hero {
-        padding: 24px;
-      }
-      .hero-content h2 {
-        font-size: 2.2rem;
-      }
-      .navbar {
-        flex-direction: column;
-        align-items: start;
-        gap: 12px;
-      }
-      .nav-links {
-        gap: 12px;
-      }
-    }
-  </style>
+  <link rel="stylesheet" href="style.css">
 </head>
 <body>
 <div class="container">
@@ -321,7 +37,7 @@
         <a href="#ari-page" class="btn-outline" style="margin-left: 12px;">Ari gallery</a>
       </div>
       <div class="hero-image">
-        <img src="https://commons.wikimedia.org/wiki/Special:FilePath/Screen%20print%20hand%20bench%20proffesional%20print%20bench%20in%20Squeegee%20%26%20Ink%20studio.jpg?width=900"
+        <img src="c:\Users\Hey!\Downloads\Gemini_Generated_Image_679y9679y9679y96 (1).png"
              alt="Screen printing press bench - Rukumani Printing Press">
       </div>
     </div>
@@ -365,7 +81,7 @@
       <div class="product-card"><h3>Birthday</h3><p>Fun, colorful birthday cards for all ages</p></div>
       <div class="product-card"><h3>Custom</h3><p>Personalized designs for any occasion</p></div>
     </div>
-    <p style="margin-top: 0.5rem; opacity: 0.8;">Also: baby shower, anniversary, corporate invites</p>
+    <p style="margin-top: 0.https5rem; opacity: 0.8;">Also: baby shower, anniversary, corporate invites</p>
   </section>
 
   <!-- ===== ARI GALLERY with real photographs ===== -->
@@ -376,39 +92,39 @@
 
     <div class="ari-gallery">
       <div class="ari-item">
-        <div class="ari-img"><img src="https://commons.wikimedia.org/wiki/Special:FilePath/%27Phulkari%27%20(bridal%20shawl),%20Punjab,%20early%2020th%20century,%20cotton,%20silk%20and%20embroidery,%20Honolulu%20Academy%20of%20Arts.jpg?width=500" alt="Floral Ari embroidery"></div>
+        <div class="ari-img"><img src="https://pixabay.com/get/g767f30ffc9fc2f0d907aaae5377071fba248c241665baec72432c2de66b14b3fe559cc418a2fa7111767f64d1466db71_1920.jpg?longlived=" alt="Floral Ari embroidery"></div>
         <h4>Floral Ari</h4><p>delicate thread work</p>
       </div>
       <div class="ari-item">
-        <div class="ari-img"><img src="https://commons.wikimedia.org/wiki/Special:FilePath/Bridal%20shawl%20(phulkari)%20from%20Punjab,%20khadi%20(hand-spun,%20hand-woven%20cotton),%20silk,%20plain%20weave,%20embroidery,%20Honolulu%20Museum%20of%20Art.JPG?width=500" alt="Traditional motif embroidery"></div>
+        <div class="ari-img"><img src="https://pixabay.com/get/g6376eeb581deebac15a95cfc146569904654ac82c25f1185b88d9153f7686d75ec4eb64b135f5796348e89c3c8dee338_1920.jpg?longlived=" alt="Traditional motif embroidery"></div>
         <h4>Traditional Motif</h4><p>heritage patterns</p>
       </div>
       <div class="ari-item">
-        <div class="ari-img"><img src="https://commons.wikimedia.org/wiki/Special:FilePath/Zunlozis,%20gold%20lace%20weavers,%20Mussulmans,%20Delhi%20(NYPL%20b13409080-1125426).jpg?width=500" alt="Zari gold thread embroidery"></div>
+        <div class="ari-img"><img src="https://pixabay.com/get/g9714166e6ead298e2d262917e13954398cd39cda08a828231819429f3fa0536ab448fa078b172e59082d87e801a19170_1920.jpg?longlived=" alt="Zari gold thread embroidery"></div>
         <h4>Zari Ari</h4><p>gold &amp; metallic</p>
       </div>
       <div class="ari-item">
-        <div class="ari-img"><img src="https://commons.wikimedia.org/wiki/Special:FilePath/A%20family%20of%20Artisan,%20Smt%20Ruchika%20Dey%20and%20Shri%20Debabrata%20De,%20from%20Raipur%20district%20of%20Chhattisgarh%20are%20National%20awardees%20in%20respect%20of%20Handicraft%20Sector%20for%20the%20year%202003%20for%20their%20Kantha%20Embroidery.jpg?width=500" alt="Leaf and vine nature embroidery"></div>
+        <div class="ari-img"><img src="https://pixabay.com/get/gd00a756bcdd76391c2d8cc2e8a4d4db15b362071a18572ba105734f708fd6dc055b649c308a08ffdbdff15b4eeca8a58_1920.jpg?longlived=" alt="Leaf and vine nature embroidery"></div>
         <h4>Leaf &amp; vine</h4><p>nature inspired</p>
       </div>
       <div class="ari-item">
-        <div class="ari-img"><img src="https://commons.wikimedia.org/wiki/Special:FilePath/Chinese%20New%20Year%20decoration%20in%20restaurant%20of%20Macau.jpg?width=500" alt="Fu red and gold luck design"></div>
+        <div class="ari-img"><img src="https://pixabay.com/get/gc724aaa94609c88a3b50ca6b93290d6f2ff7a960eda5d3b0ac8ce90e2b20f986c9ac1060ec55bdc186887295c51a8856_1920.jpg?longlived=" alt="Fu red and gold luck design"></div>
         <h4>Fu (福) Ari</h4><p>red &amp; gold · luck</p>
       </div>
       <div class="ari-item">
-        <div class="ari-img"><img src="https://commons.wikimedia.org/wiki/Special:FilePath/Embroidery.jpeg?width=500" alt="Contemporary Ari fusion design"></div>
+        <div class="ari-img"><img src="https://pixabay.com/get/g6b86222dceb482d25c70e71bbfcff8e6f463d1599427c8e23df6497d7f971bb2299e243e3fe520f18b87ddbd871f7d9e_1920.jpg?longlived=" alt="Contemporary Ari fusion design"></div>
         <h4>Contemporary</h4><p>modern ari fusion</p>
       </div>
       <div class="ari-item">
-        <div class="ari-img"><img src="https://commons.wikimedia.org/wiki/Special:FilePath/Art%20Embroidery%201878%2013.jpg?width=500" alt="Bridal Ari embroidery"></div>
+        <div class="ari-img"><img src="https://pixabay.com/get/g82f6e92cd8fb30dc6b730b50c783ec24d5eab9776bcbab34ed7f103009a9751e38482bdb3889d7083dc8199794f12215_1920.jpg?longlived=" alt="Bridal Ari embroidery"></div>
         <h4>Bridal Ari</h4><p>wedding special</p>
       </div>
       <div class="ari-item">
-        <div class="ari-img"><img src="https://commons.wikimedia.org/wiki/Special:FilePath/Peacock%20Plumage.jpg?width=500" alt="Peacock feather inspired Ari design"></div>
+        <div class="ari-img"><img src="https://cdn.pixabay.com/photo/2018/01/22/08/45/peacock-3098451_1280.jpg" alt="Peacock feather inspired Ari design"></div>
         <h4>Peacock Ari</h4><p>royal feather design</p>
       </div>
       <div class="ari-item">
-        <div class="ari-img"><img src="https://commons.wikimedia.org/wiki/Special:FilePath/Red%20hibiscus%20closeup.jpg?width=500" alt="Tropical hibiscus Ari design"></div>
+        <div class="ari-img"><img src="https://pixabay.com/get/ga29f0ddb1072e0c74972f051effac6610c741a6f9653d7e5b07da769000f2c0940f2dafc0b3598142dc9a17d5662c77e_1920.jpg?longlived=" alt="Tropical hibiscus Ari design"></div>
         <h4>Tropical Ari</h4><p>hibiscus &amp; palm</p>
       </div>
     </div>
@@ -445,7 +161,7 @@
     <div style="border-radius: 40px; overflow: hidden; background: #e6d8b5; padding: 1rem; text-align: center; margin: 1rem 0;">
       <p style="font-weight:600;">Opp New Bus Stand, near Bombay Bazzar, Paranthaman Complex, Vallioor</p>
       <p style="opacity:0.8;">Open: Mon–Sat 9:30 AM – 8:00 PM</p>
-      <p style="margin-top:0.5rem; background: white; border-radius:40px; padding:0.4rem 1rem; display:inline-block;">Call for directions: 9952749898</p>
+      <p style="margin-top:0.5rem; background: white; border-radius:40px; padding:0.4rem 1rem; display:inline-block;">📍Call for directions: 9952749898</p>
     </div>
   </section>
 
@@ -479,7 +195,6 @@
   }
 }
 </script>
-
 <script>
   document.querySelector('head').insertAdjacentHTML('beforeend',
     `<link rel="canonical" href="${window.location.href}" />`

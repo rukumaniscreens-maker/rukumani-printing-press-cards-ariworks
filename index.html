@@ -1,0 +1,489 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="High quality printing services for visiting cards wedding invitations banners and flex printing. Affordable prices premium quality and fast service">
+  <meta name="title" content="near by screen printing press">
+  <meta name="google-site-verification" content="ZmGIFLHDiJUW3fOw4IO44OO4-Gp6tmuf-KC4-KXYvTM" />
+  <title>Rukumani Printing Press · Cards & Ari</title>
+  <meta name="google-site-verification" content="ZmGIFLHDiJUW3fOw4IO44OO4-Gp6tmuf-KC4-KXYvTM" />
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      font-family: 'Segoe UI', Roboto, system-ui, sans-serif;
+    }
+    body {
+      background: #fcf7ef;
+      color: #2e1a0c;
+    }
+    .container {
+      max-width: 1280px;
+      margin: 0 auto;
+      padding: 0 24px 30px;
+    }
+    /* navigation */
+    .navbar {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: space-between;
+      align-items: center;
+      padding: 18px 0 10px;
+      border-bottom: 2px solid #e6d8b5;
+    }
+    .logo h1 {
+      font-size: 1.8rem;
+      letter-spacing: -0.5px;
+      font-weight: 600;
+      color: #4c1f0c;
+    }
+    .logo span {
+      font-weight: 300;
+      font-size: 0.9rem;
+      opacity: 0.7;
+      display: inline-block;
+      margin-left: 8px;
+    }
+    .nav-links {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 20px;
+      align-items: center;
+    }
+    .nav-links a {
+      text-decoration: none;
+      color: #3d2616;
+      font-weight: 500;
+      font-size: 1rem;
+      transition: 0.2s;
+    }
+    .nav-links a:hover {
+      color: #a1552b;
+    }
+    .phone-highlight {
+      background: #4c1f0c;
+      color: #fcf7ef !important;
+      padding: 8px 18px;
+      border-radius: 40px;
+      font-weight: 600;
+      display: inline-flex;
+      align-items: center;
+      gap: 6px;
+    }
+    /* sections */
+    section {
+      padding: 40px 0 20px;
+      scroll-margin-top: 80px;
+    }
+    .section-title {
+      font-size: 2.2rem;
+      font-weight: 500;
+      border-left: 8px solid #b87c4b;
+      padding-left: 20px;
+      margin-bottom: 30px;
+      color: #2e1a0c;
+    }
+    .hero {
+      display: flex;
+      flex-wrap: wrap;
+      align-items: center;
+      gap: 40px;
+      background: #f3ecdb;
+      border-radius: 60px 60px 40px 40px;
+      padding: 30px 40px;
+      margin-top: 10px;
+    }
+    .hero-content {
+      flex: 1 1 280px;
+    }
+    .hero-content h2 {
+      font-size: 3rem;
+      font-weight: 300;
+      line-height: 1.2;
+      color: #2e1a0c;
+    }
+    .hero-content p {
+      font-size: 1.2rem;
+      margin: 18px 0 24px;
+      opacity: 0.8;
+    }
+    .btn-primary {
+      background: #4c1f0c;
+      color: #fcf7ef;
+      padding: 14px 32px;
+      border-radius: 60px;
+      text-decoration: none;
+      font-weight: 600;
+      display: inline-block;
+      transition: 0.2s;
+      border: none;
+    }
+    .btn-primary:hover {
+      background: #6b2f16;
+    }
+    .btn-outline {
+      background: transparent;
+      border: 2px solid #4c1f0c;
+      color: #4c1f0c;
+      padding: 12px 28px;
+      border-radius: 60px;
+      text-decoration: none;
+      font-weight: 600;
+      display: inline-block;
+    }
+    .hero-image {
+      flex: 1 1 300px;
+      border-radius: 40px;
+      overflow: hidden;
+      background: #dacbaa;
+      box-shadow: 0 10px 25px rgba(0,0,0,0.05);
+    }
+    .hero-image img {
+      width: 100%;
+      height: 340px;
+      object-fit: cover;
+      display: block;
+    }
+    .about-grid {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 20px 40px;
+      margin: 24px 0 10px;
+    }
+    .highlight {
+      display: flex;
+      align-items: center;
+      gap: 12px;
+      background: #f5edd6;
+      padding: 10px 24px 10px 20px;
+      border-radius: 60px;
+    }
+    .card-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+      gap: 28px;
+      margin: 25px 0;
+    }
+    .service-card, .product-card {
+      background: #fdfaf3;
+      border-radius: 40px;
+      padding: 28px 18px;
+      text-align: center;
+      box-shadow: 0 4px 12px rgba(0,0,0,0.02);
+      border: 1px solid #ede3cc;
+      transition: 0.2s;
+    }
+    .service-card:hover, .product-card:hover {
+      transform: translateY(-4px);
+      border-color: #c7a87b;
+    }
+    .service-card h3, .product-card h3 {
+      margin-top: 4px;
+    }
+    .invite-highlight {
+      background: #e6d8b5;
+      border-radius: 80px;
+      padding: 12px 28px;
+      display: inline-flex;
+      flex-wrap: wrap;
+      gap: 20px 30px;
+      font-weight: 500;
+      margin-bottom: 10px;
+    }
+    .page-divider {
+      height: 2px;
+      background: linear-gradient(90deg, transparent, #dacbaa, transparent);
+      margin: 30px 0 10px;
+    }
+    /* ARI GALLERY – real photographs */
+    .ari-gallery {
+      display: grid;
+      grid-template-columns: repeat(auto-fill, minmax(160px, 1fr));
+      gap: 24px 16px;
+      margin: 28px 0 20px;
+    }
+    .ari-item {
+      background: #fcf4e6;
+      border-radius: 40px 40px 30px 30px;
+      padding: 16px 10px 18px;
+      text-align: center;
+      border: 1px solid #e3d3b6;
+      transition: 0.15s;
+      box-shadow: 0 4px 10px rgba(0,0,0,0.02);
+    }
+    .ari-item:hover {
+      border-color: #b48c5e;
+      background: #faf0dd;
+    }
+    .ari-img {
+      width: 100%;
+      aspect-ratio: 1/1;
+      border-radius: 30px;
+      margin-bottom: 12px;
+      overflow: hidden;
+      box-shadow: 0 4px 8px rgba(0,0,0,0.05);
+      background-color: #eee3cd;
+    }
+    .ari-img img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      display: block;
+      transition: 0.3s;
+    }
+    .ari-item:hover .ari-img img {
+      transform: scale(1.06);
+    }
+    .ari-item h4 {
+      font-weight: 600;
+      font-size: 1rem;
+      color: #3d2616;
+    }
+    .ari-item p {
+      font-size: 0.8rem;
+      opacity: 0.7;
+    }
+    .contact-block {
+      background: #f5edd6;
+      border-radius: 60px;
+      padding: 28px 32px;
+    }
+    .contact-row {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 20px 36px;
+      align-items: center;
+    }
+    .contact-item a {
+      color: #2e1a0c;
+      text-decoration: none;
+      font-weight: 500;
+    }
+    .contact-item a:hover {
+      text-decoration: underline;
+    }
+    .address-block {
+      flex: 1 1 220px;
+    }
+    .footer-note {
+      margin-top: 40px;
+      text-align: center;
+      padding: 24px 0 10px;
+      border-top: 1px solid #e6d8b5;
+      opacity: 0.8;
+      font-size: 0.95rem;
+    }
+    @media (max-width: 700px) {
+      .hero {
+        padding: 24px;
+      }
+      .hero-content h2 {
+        font-size: 2.2rem;
+      }
+      .navbar {
+        flex-direction: column;
+        align-items: start;
+        gap: 12px;
+      }
+      .nav-links {
+        gap: 12px;
+      }
+    }
+  </style>
+</head>
+<body>
+<div class="container">
+
+  <!-- navigation -->
+  <nav class="navbar">
+    <div class="logo">
+      <h1>Rukumani <span>screen · cards · ari</span></h1>
+    </div>
+    <div class="nav-links">
+      <a href="#home">Home</a>
+      <a href="#about">About</a>
+      <a href="#services">Services</a>
+      <a href="#products">Products</a>
+      <a href="#ari-page">Ari Gallery</a>
+      <a href="#contact" class="phone-highlight">9952749898</a>
+    </div>
+  </nav>
+
+  <!-- home / hero -->
+  <section id="home">
+    <div class="hero">
+      <div class="hero-content">
+        <h2>Print &amp; Ari <br>crafted with care</h2>
+        <p>Screen printing · visiting cards · ari work · invitations for marriage, birthday &amp; more.</p>
+        <a href="#contact" class="btn-primary">Call now: 9952749898</a>
+        <a href="#ari-page" class="btn-outline" style="margin-left: 12px;">Ari gallery</a>
+      </div>
+      <div class="hero-image">
+        <img src="https://commons.wikimedia.org/wiki/Special:FilePath/Screen%20print%20hand%20bench%20proffesional%20print%20bench%20in%20Squeegee%20%26%20Ink%20studio.jpg?width=900"
+             alt="Screen printing press bench - Rukumani Printing Press">
+      </div>
+    </div>
+  </section>
+
+  <!-- about -->
+  <section id="about">
+    <h2 class="section-title">About us</h2>
+    <div class="about-block">
+      <p><strong>Rukumani Printing Press</strong> has been serving the Vallioor community and beyond for over 15 years. We combine traditional craftsmanship with modern printing techniques to bring your visions to life — from elegant wedding invitations to intricate Ari embroidery.</p>
+      <p>Our family-run workshop is built on trust, quality, and attention to detail. Every card, every print, and every Ari design is handled with the same care and passion.</p>
+      <div class="about-grid">
+        <div class="highlight"><span><strong>15+ years</strong> of excellence</span></div>
+        <div class="highlight"><span><strong>Handcrafted</strong> with love</span></div>
+        <div class="highlight"><span><strong>100%</strong> customer satisfaction</span></div>
+        <div class="highlight"><span>On-time delivery</span></div>
+      </div>
+      <p style="margin-top: 1.2rem;">We don't just print — we create memories.</p>
+    </div>
+  </section>
+
+  <!-- services -->
+  <section id="services">
+    <h2 class="section-title">Our services</h2>
+    <div class="card-grid">
+      <div class="service-card"><h3>Screen printing</h3><p>Custom screen printing on textiles &amp; more</p></div>
+      <div class="service-card"><h3>Visiting cards</h3><p>Premium quality, elegant business cards</p></div>
+      <div class="service-card"><h3>Ari work</h3><p>Handcrafted Ari embroidery &amp; designs</p></div>
+    </div>
+  </section>
+
+  <!-- products -->
+  <section id="products">
+    <h2 class="section-title">Invitation cards</h2>
+    <div class="invite-highlight">
+      <span>Marriage · Birthday · Custom events</span>
+      <span style="font-size: 1rem;">9952749898</span>
+    </div>
+    <div class="card-grid">
+      <div class="product-card"><h3>Marriage</h3><p>Elegant wedding invites with traditional touch</p></div>
+      <div class="product-card"><h3>Birthday</h3><p>Fun, colorful birthday cards for all ages</p></div>
+      <div class="product-card"><h3>Custom</h3><p>Personalized designs for any occasion</p></div>
+    </div>
+    <p style="margin-top: 0.5rem; opacity: 0.8;">Also: baby shower, anniversary, corporate invites</p>
+  </section>
+
+  <!-- ===== ARI GALLERY with real photographs ===== -->
+  <div class="page-divider"></div>
+  <section id="ari-page">
+    <h2 class="section-title">Ari work designs</h2>
+    <p style="margin-bottom: 1.2rem;">Exclusive handmade Ari embroidery – each piece tells a story.</p>
+
+    <div class="ari-gallery">
+      <div class="ari-item">
+        <div class="ari-img"><img src="https://commons.wikimedia.org/wiki/Special:FilePath/%27Phulkari%27%20(bridal%20shawl),%20Punjab,%20early%2020th%20century,%20cotton,%20silk%20and%20embroidery,%20Honolulu%20Academy%20of%20Arts.jpg?width=500" alt="Floral Ari embroidery"></div>
+        <h4>Floral Ari</h4><p>delicate thread work</p>
+      </div>
+      <div class="ari-item">
+        <div class="ari-img"><img src="https://commons.wikimedia.org/wiki/Special:FilePath/Bridal%20shawl%20(phulkari)%20from%20Punjab,%20khadi%20(hand-spun,%20hand-woven%20cotton),%20silk,%20plain%20weave,%20embroidery,%20Honolulu%20Museum%20of%20Art.JPG?width=500" alt="Traditional motif embroidery"></div>
+        <h4>Traditional Motif</h4><p>heritage patterns</p>
+      </div>
+      <div class="ari-item">
+        <div class="ari-img"><img src="https://commons.wikimedia.org/wiki/Special:FilePath/Zunlozis,%20gold%20lace%20weavers,%20Mussulmans,%20Delhi%20(NYPL%20b13409080-1125426).jpg?width=500" alt="Zari gold thread embroidery"></div>
+        <h4>Zari Ari</h4><p>gold &amp; metallic</p>
+      </div>
+      <div class="ari-item">
+        <div class="ari-img"><img src="https://commons.wikimedia.org/wiki/Special:FilePath/A%20family%20of%20Artisan,%20Smt%20Ruchika%20Dey%20and%20Shri%20Debabrata%20De,%20from%20Raipur%20district%20of%20Chhattisgarh%20are%20National%20awardees%20in%20respect%20of%20Handicraft%20Sector%20for%20the%20year%202003%20for%20their%20Kantha%20Embroidery.jpg?width=500" alt="Leaf and vine nature embroidery"></div>
+        <h4>Leaf &amp; vine</h4><p>nature inspired</p>
+      </div>
+      <div class="ari-item">
+        <div class="ari-img"><img src="https://commons.wikimedia.org/wiki/Special:FilePath/Chinese%20New%20Year%20decoration%20in%20restaurant%20of%20Macau.jpg?width=500" alt="Fu red and gold luck design"></div>
+        <h4>Fu (福) Ari</h4><p>red &amp; gold · luck</p>
+      </div>
+      <div class="ari-item">
+        <div class="ari-img"><img src="https://commons.wikimedia.org/wiki/Special:FilePath/Embroidery.jpeg?width=500" alt="Contemporary Ari fusion design"></div>
+        <h4>Contemporary</h4><p>modern ari fusion</p>
+      </div>
+      <div class="ari-item">
+        <div class="ari-img"><img src="https://commons.wikimedia.org/wiki/Special:FilePath/Art%20Embroidery%201878%2013.jpg?width=500" alt="Bridal Ari embroidery"></div>
+        <h4>Bridal Ari</h4><p>wedding special</p>
+      </div>
+      <div class="ari-item">
+        <div class="ari-img"><img src="https://commons.wikimedia.org/wiki/Special:FilePath/Peacock%20Plumage.jpg?width=500" alt="Peacock feather inspired Ari design"></div>
+        <h4>Peacock Ari</h4><p>royal feather design</p>
+      </div>
+      <div class="ari-item">
+        <div class="ari-img"><img src="https://commons.wikimedia.org/wiki/Special:FilePath/Red%20hibiscus%20closeup.jpg?width=500" alt="Tropical hibiscus Ari design"></div>
+        <h4>Tropical Ari</h4><p>hibiscus &amp; palm</p>
+      </div>
+    </div>
+    <div style="background: #f5edd6; padding: 0.8rem 2rem; border-radius: 60px; display: inline-block; margin: 0.5rem 0 1rem;">
+      9952749898 · for custom ari orders
+    </div>
+    <p style="margin-top: 0.2rem; opacity: 0.7;">Browse our ari collection – each design is crafted in-house.</p>
+  </section>
+
+  <!-- contact -->
+  <section id="contact">
+    <h2 class="section-title">Contact Us</h2>
+    <div class="contact-block">
+      <div class="contact-row">
+        <div class="contact-item"><a href="tel:+919952749898">9952749898</a></div>
+        <div class="contact-item"><a href="tel:+919600549011">9600549011</a></div>
+        <div class="contact-item"><a href="mailto:rukumaniscreens@gmail.com">rukumaniscreens@gmail.com</a></div>
+        <div class="contact-item address-block">Opp New Bus Stand, near Bombay Bazzar, Paranthaman Complex, Vallioor, Tirunelveli-627117</div>
+      </div>
+      <div style="margin-top: 1.2rem; display: flex; flex-wrap: wrap; gap: 1.5rem; justify-content: space-between; align-items: center;">
+        <span>Rukumani Printing Press Cards &amp; Ari Work</span>
+        <span>Mon–Sat 9:30 AM – 8:00 PM</span>
+        <span>#RukumaniPrints</span>
+      </div>
+    </div>
+
+    <div style="display: flex; flex-wrap: wrap; gap: 1.5rem 3rem; margin: 1rem 0 2rem 0; background: #f5edd6; padding: 1rem 2rem; border-radius: 60px;">
+      <span>9952749898</span>
+      <span>9600549011</span>
+      <span>rukumaniscreens@gmail.com</span>
+      <span>Vallioor, Tirunelveli</span>
+    </div>
+
+    <div style="border-radius: 40px; overflow: hidden; background: #e6d8b5; padding: 1rem; text-align: center; margin: 1rem 0;">
+      <p style="font-weight:600;">Opp New Bus Stand, near Bombay Bazzar, Paranthaman Complex, Vallioor</p>
+      <p style="opacity:0.8;">Open: Mon–Sat 9:30 AM – 8:00 PM</p>
+      <p style="margin-top:0.5rem; background: white; border-radius:40px; padding:0.4rem 1rem; display:inline-block;">Call for directions: 9952749898</p>
+    </div>
+  </section>
+
+  <div class="footer-note">
+    <p>© 2026 Rukumani Printing Press · Cards &amp; Ari · opp new bus stand, Vallioor · 9952749898</p>
+    <p style="font-size:0.8rem; margin-top: 4px;">Tirunelveli-627117 · rukumaniscreens@gmail.com</p>
+  </div>
+
+</div>
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "LocalBusiness",
+  "name": "Rukumani Screens",
+  "image": "https://kommodo.ai/i/wlrWWdY3wcsJgu0GCMk5",
+  "@id": "https://kommodo.ai/i/wlrWWdY3wcsJgu0GCMk5",
+  "url": "https://rukumaniscreens.github.io/rukumani-printing-press-cards-ariworks/",
+  "telephone": "9952749898",
+  "address": {
+    "@type": "PostalAddress",
+    "streetAddress": "Vallioor new bus stand",
+    "addressLocality": "Vallioor",
+    "postalCode": "627117",
+    "addressCountry": "IN"
+  },
+  "openingHoursSpecification": {
+    "@type": "OpeningHoursSpecification",
+    "dayOfWeek": ["Monday","Tuesday","Wednesday","Thursday","Friday","Saturday"],
+    "opens": "09:00",
+    "closes": "22:00"
+  }
+}
+</script>
+
+<script>
+  document.querySelector('head').insertAdjacentHTML('beforeend',
+    `<link rel="canonical" href="${window.location.href}" />`
+  );
+</script>
+</body>
+</html>
